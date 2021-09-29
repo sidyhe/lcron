@@ -33,3 +33,6 @@ lcron.delete("name1")
 lcron.delete("name666") -- not exist
 
 ```
+
+# license
+no license, any way you want.
