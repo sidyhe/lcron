@@ -45,7 +45,7 @@ static void createmeta(lua_State* L) {
 	luaL_newmetatable(L, METANAME_LCRONC);  /* create metatable */
 	lua_pushvalue(L, -1);  /* push metatable */
 	lua_setfield(L, -2, "__index");  /* metatable.__index = metatable */
-	luaL_setfuncs(L, obj_funcs, 0);  /* add file methods to new metatable */
+	luaL_setfuncs(L, obj_funcs, 0);  /* add methods to new metatable */
 	lua_pop(L, 1);  /* pop new metatable */
 }
 
